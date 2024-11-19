@@ -1,0 +1,103 @@
+---
+title: "Super-Duper Subject - Exercises for Chapter 1"
+runningheader: "Proposed Exercises | Chapter 1. Introduction to Super-Duper Subject"
+author: "Bachelor in Interesting Stuff"
+date: "Last generated: `r Sys.Date()`"
+output: tufte::tufte_handout
+classoption: a4paper
+header-includes:
+  - \usepackage{comment}
+  - \providecommand{\pandocbounded}[1]{#1}
+params:
+  solution: false
+knit: render_with_solution
+---
+
+```{r setup, echo=FALSE, results="asis"}
+knitr::opts_chunk$set(message=FALSE)
+setup_solution()
+```
+
+::: {.marginfigure data-latex="[-31mm]"}
+![](assets/acronimo_nombre3l.eps)
+:::
+
+\newthought{Exercise 1}.
+Lorem ipsum odor amet, consectetuer adipiscing elit. Nostra ridiculus libero quis nisl magna. Elementum eleifend interdum efficitur porttitor lectus. Amet purus vestibulum inceptos fermentum proin. In amet lacinia quam potenti platea dui imperdiet malesuada. Fermentum conubia elementum congue maximus lacus platea dignissim. Pellentesque mollis purus ante, parturient fames suscipit congue mattis lectus.
+
+::: {.marginfigure data-latex="[-7mm]"}
+\newthought{Solution:} $x = 3$.
+:::
+
+::: {.solution data-latex=""}
+\begin{align*}
+  x &= ... \\
+    &= ... \\
+    &= ... \\
+    &= 3
+\end{align*}
+:::
+
+\newthought{Exercise 2}.
+Potenti senectus cubilia non aliquet ad. Sapien condimentum nisl ornare nunc integer ut gravida. Conubia tortor parturient quis, viverra vivamus tristique mollis. Dapibus porta sem vel blandit, auctor congue aliquet malesuada aptent. Dis nisi sodales mi neque aenean mi egestas vitae tempor. Porta nisi eleifend quam curae porttitor montes habitant. Suscipit ac mollis orci ridiculus ligula aptent ut proin. Dapibus vehicula velit vehicula adipiscing nullam sed habitant leo.
+
+::: {.marginfigure data-latex="[-7mm]"}
+\newthought{Solution:} $n = 6$.
+:::
+
+::: {.solution data-latex=""}
+\begin{align*}
+  n &= ... \\
+    &= ... \\
+    &= ... \\
+    &= 6
+\end{align*}
+:::
+
+\newthought{Exercise 3}.
+Efficitur eget habitant ac elementum class maximus viverra. Class augue consectetur penatibus interdum platea mattis volutpat neque diam. Faucibus donec ultricies inceptos maximus magna est blandit. Lacus eleifend viverra blandit facilisi commodo sapien. Taciti facilisis curae faucibus phasellus curae. Scelerisque volutpat eros parturient, habitasse elementum ridiculus faucibus laoreet. Nam facilisi eu aenean ornare turpis. Tellus nisl fames nisi vulputate litora fringilla non felis.
+
+::: {.marginfigure data-latex="[-7mm]"}
+\newthought{Solution:} $t = 0$.
+:::
+
+::: {.solution data-latex=""}
+\begin{align*}
+  t &= ... \\
+    &= ... \\
+    &= ... \\
+    &= 0
+\end{align*}
+:::
+
+\newthought{Exercise 4}.
+Aenean auctor consectetur varius egestas cursus venenatis enim ut auctor. Blandit sodales senectus cubilia magnis ligula suscipit. Mattis pulvinar fermentum nostra mi vestibulum libero sed ultricies. Dui posuere quam sem gravida ante eget. Lorem imperdiet duis sem eget; efficitur proin? Dui habitasse orci facilisis etiam varius accumsan.
+
+::: {.marginfigure data-latex="[-7mm]"}
+\newthought{Solution:} $h = 20$.
+:::
+
+::: {.solution data-latex=""}
+\begin{align*}
+  h &= ... \\
+    &= ... \\
+    &= ... \\
+    &= 30
+\end{align*}
+:::
+
+\newthought{Exercise 5}.
+Vel proin quam torquent sollicitudin ante nostra duis tincidunt. Sollicitudin praesent sociosqu ex mi; lobortis maecenas nostra sodales efficitur. Nibh euismod litora elit ligula ullamcorper. Cursus maximus senectus velit lacus dapibus nullam magna tristique cubilia. Tellus rutrum faucibus consectetur per id. Dignissim magna bibendum vel fames eleifend. Praesent lacus cras euismod proin nunc dictum. Himenaeos in nam ipsum quis arcu. Primis magnis dictum aliquam, fames praesent elementum. Fringilla aptent malesuada dictumst a efficitur; nisl turpis.
+
+::: {.marginfigure data-latex="[-7mm]"}
+\newthought{Solution:} $j = 2$.
+:::
+
+::: {.solution data-latex=""}
+\begin{align*}
+  j &= ... \\
+    &= ... \\
+    &= ... \\
+    &= 2
+\end{align*}
+:::

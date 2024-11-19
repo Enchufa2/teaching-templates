@@ -1,0 +1,97 @@
+---
+title: "Super-Duper Subject - Exam"
+runningheader: "Exam | Super-Duper Subject"
+author: "Bachelor in Interesting Stuff"
+date: "`r Sys.Date()`. Duration: 100 min."
+output: tufte::tufte_handout
+classoption: a4paper
+header-includes:
+  - \usepackage{comment}
+  - \providecommand{\pandocbounded}[1]{#1}
+params:
+  solution: false
+knit: render_with_solution
+---
+
+```{r setup, echo=FALSE, results="asis"}
+knitr::opts_chunk$set(message=FALSE)
+setup_solution()
+```
+
+::: {.marginfigure data-latex="[-31mm]"}
+![](assets/acronimo_nombre3l.eps)
+:::
+
+::: {.marginfigure data-latex="[-3mm]"}
+\newthought{Instructions:}
+- **Allowed materials:** pen and calculator.
+
+- Identify your random variables and their meaning.
+
+- Leave no room for imagination: explain your steps,
+  identify the properties you apply.
+
+- Specify the units of your results when applicable.
+
+- Provide exact results for probabilities unless utterly unfeasible.
+  In such a case, provide the corresponding R command.
+
+\newthought{Formulae:}
+- Uniform r.v. in $[a,b]$:
+  $$f(x) = \frac{1}{b-a},\; F(x)=\frac{x-a}{b-a}$$
+- Exponential r.v. with parameter $\lambda$:
+  $$f(x) = \lambda e^{-\lambda x},\; F(x)=1-e^{-\lambda x}$$
+- Poisson r.v. with parameter $\lambda$:
+  $$P(X=k) = \frac{\lambda^k e^{-\lambda}}{k!}$$
+\vspace{5mm}
+:::
+
+\newthought{Problem 1}. (2 pts)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+
+::: {.solution data-latex=""}
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+$$F = m \cdot a$$
+:::
+
+\newthought{Problem 2}. (3 pts)
+Risus luctus natoque, sollicitudin turpis[^1] eros quisque erat. Malesuada ex mus gravida magna vestibulum tortor cubilia. Condimentum auctor duis nibh potenti suscipit sit finibus. Amet ultricies massa nisi odio magnis. Finibus velit eros, bibendum velit ullamcorper enim risus dictum senectus.
+
+Tortor tempus mauris sagittis dignissim nibh. Aliquam amet justo per est viverra nascetur ornare. Nam congue venenatis at; arcu euismod scelerisque. Dapibus nisi dapibus cursus curabitur velit. Fringilla senectus dolor vulputate ullamcorper consectetur mauris maecenas dignissim nunc. Orci quis pellentesque conubia montes potenti non? Ut ac turpis aptent cursus ullamcorper magna augue sagittis. Nascetur felis nostra tortor lacus quam tincidunt. Bibendum lobortis ad eleifend blandit porta duis.
+
+[^1]: Vel proin quam torquent sollicitudin ante nostra duis tincidunt. Sollicitudin praesent sociosqu ex mi; lobortis maecenas nostra sodales efficitur.
+
+```{r fig-margin}
+#| echo: FALSE
+#| out.width: "100%"
+#| fig.margin: TRUE
+#| fig.asp: 1
+#| fig.cap: "Nibh euismod litora elit ligula ullamcorper."
+boxplot(airquality)
+```
+
+::: {.solution data-latex=""}
+Litora dapibus placerat conubia vulputate faucibus arcu maecenas facilisis.
+$$E = mc^2$$
+Taciti fames fringilla euismod conubia fringilla neque. Aliquam pretium taciti cras lectus potenti nullam? Leo cursus nostra arcu imperdiet phasellus fermentum.
+$$\exp(i\pi) = -1$$
+:::
+
+\newthought{Problem 3}. (5 pts)
+Proin maecenas gravida sapien vel tempus fringilla finibus cubilia. Facilisi eleifend gravida feugiat fringilla fames (see Figure 1).
+
+Ultrices rhoncus aenean volutpat habitant est amet pretium. Pharetra vulputate habitasse nunc class nullam mauris condimentum nullam. Per taciti lacinia fermentum pellentesque rutrum proin. Nascetur orci laoreet suspendisse habitasse felis. Ornare dictum blandit sociosqu natoque aliquet euismod euismod ridiculus. Maecenas neque placerat suspendisse augue tellus dis pulvinar. Efficitur justo convallis aenean nisi elementum dis fusce montes facilisi.
+
+(a) Facilisi lacus pretium volutpat habitasse quam etiam pulvinar.
+(b) Sapien inceptos dolor nascetur consequat nibh vulputate.
+(c) Finibus aenean facilisi montes malesuada amet; facilisis sagittis.
+(d) Curae magna ultricies quisque nisl, suscipit dapibus ut augue mattis.
+(e) Cras taciti magna hac laoreet natoque. Cursus fermentum morbi nam torquent non netus.
+
+::: {.solution data-latex=""}
+(a) Ridiculus ultricies fusce vehicula augue pretium fermentum sagittis aenean.
+(b) Curabitur amet elementum nunc per volutpat.
+(c) Praesent cubilia fermentum varius per sapien ipsum phasellus vulputate.
+(d) Tempor porttitor netus sodales tempus congue; litora nascetur adipiscing.
+(e) Condimentum torquent fusce rutrum dui sit. 
+:::

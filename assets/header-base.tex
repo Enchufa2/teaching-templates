@@ -1,0 +1,58 @@
+
+\hypersetup{colorlinks=true, linkcolor=}
+\setbeamerfont{caption}{size=\scriptsize}
+\definecolor{uc3m}{cmyk}{0.9827,1,0.2624,0.1077}
+\setbeamercolor{palette primary}{bg=uc3m}
+
+\let\oldalert\alert
+\renewcommand{\alert}[1]{\textbf{\oldalert{#1}}}
+
+\metroset{titleformat=smallcaps}
+\metroset{block=fill, numbering=fraction}
+%\setsansfont[BoldFont={Fira Sans SemiBold}]{Fira Sans Book}
+
+\titlegraphic{\includegraphics[width=6cm]{assets/acronimo_nombre1l}}
+
+\usepackage{textpos}
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{10mm}(0.96\textwidth,-8.5mm)
+  \includegraphics[width=10mm]{assets/acronimo_0}
+\end{textblock*}}
+
+% https://github.com/matze/mtheme/issues/307
+\let\oldblock\block
+\let\endoldblock\endblock
+\renewenvironment{block}[1]{
+  \begin{oldblock}{#1}
+  \vspace{0pt}
+}{\end{oldblock}}
+\let\oldexampleblock\exampleblock
+\let\endoldexampleblock\endexampleblock
+\renewenvironment{exampleblock}[1]{
+  \metroset{block=transparent} % transparent examples
+  \begin{oldexampleblock}{#1}
+  \vspace{0pt}
+}{\end{oldexampleblock}\metroset{block=fill}}
+\let\oldproof\proof
+\let\endoldproof\endproof
+\renewenvironment{proof}[1][\proofname]{
+  \metroset{block=transparent} % transparent proofs
+  \begin{oldproof}[#1]
+  \vspace{0pt}
+}{\end{oldproof}\metroset{block=fill}}
+\let\oldalertblock\alertblock
+\let\endoldalertblock\endalertblock
+\renewenvironment{alertblock}[1]{
+  \begin{oldalertblock}{#1}
+  \vspace{0pt}
+}{\end{oldalertblock}}
+
+\newenvironment{examplecont}{\addtocounter{theorem}{-1}\example}{\endexample}
+
+\DeclareMathOperator{\E}{{\rm I\kern-.3em E}}
+\DeclareMathOperator{\Var}{\mathrm{Var}}
+\DeclareMathOperator{\Cov}{\mathrm{Cov}}
+
+\usepackage{tikz-network}
+\usepackage{blkarray}
+\newcommand{\midx}[1]{\mbox{\scriptsize#1}}% Matrix index

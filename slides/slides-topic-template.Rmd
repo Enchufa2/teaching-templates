@@ -1,0 +1,95 @@
+---
+title: Super-Duper Subject
+subtitle: Chapter 1. Introduction to Super-Duper Subject
+author: Me Myself
+date: Department of Statistics | uc3m-Santander Big Data Institute
+institute: |
+  | Bachelor in Interesting Stuff
+  | Last generated: `r Sys.Date()`
+output:
+  binb::metropolis:
+    latex_engine: lualatex
+    toc: true
+    includes:
+      in_header: assets/header.tex
+---
+
+```{r,setup, include=FALSE}
+knitr::opts_chunk$set(cache=FALSE, echo=FALSE, message=FALSE)
+```
+
+# Section 1
+
+## Subsection 1
+
+::: {.definition data-latex="[Concept 1]"}
+A super-important definition of a \alert{concept}.
+:::
+
+::: {.example data-latex="[Concept 1 in practice]"}
+See the theory in action
+:::
+
+## Subsection 1
+
+::: {.examplecont data-latex="[Cont.]"}
+We didn't finish, the example continues here!
+:::
+
+## Subsection 2
+
+::: {.theorem data-latex="[Fundamental result]"}
+Let $X$ be a \alert{random variable},
+
+- we can say **things** about it;
+- and even more things.
+:::
+
+::: {.proof data-latex="[Proof.]"}
+\footnotesize
+And here's the proof.
+:::
+
+## Subsection 2
+
+::: {.lemma data-latex=""}
+A lemma.
+:::
+
+::: {.corollary data-latex=""}
+Some corollary.
+:::
+
+::: {.proposition data-latex=""}
+A proposition.
+:::
+
+# Section 2
+
+## Subsection 1
+
+Let's introduce the topic...
+
+::: {.example data-latex="[Illustrative example]"}
+:::::: {.columns}
+::: {.column width="53%"}
+\vspace{10pt}
+1. Consider this...
+2. and that...
+3. with an image for further info.
+:::
+::: {.column width="47%"}
+```{r}
+#| fig.asp: 1
+#| fig.width: 5
+boxplot(airquality)
+```
+:::
+::::::
+:::
+
+## Summary
+
+- Be sure to include a \alert{summary}.
+
+- A good \alert{summary} is always **enlightening**.

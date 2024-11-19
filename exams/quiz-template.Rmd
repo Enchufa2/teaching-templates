@@ -1,0 +1,49 @@
+---
+title: "Super-Duper Subject - Quiz"
+runningheader: "Quiz | Super-Duper Subject"
+author: "Bachelor in Interesting Stuff"
+date: "`r Sys.Date()`. Duration: 60 min."
+output: tufte::tufte_handout
+classoption: a4paper
+header-includes:
+  - \usepackage{comment}
+  - \providecommand{\pandocbounded}[1]{#1}
+params:
+  solution: false
+knit: render_with_solution
+---
+
+```{r setup, echo=FALSE, results="asis"}
+knitr::opts_chunk$set(message=FALSE)
+setup_solution()
+```
+
+::: {.marginfigure data-latex="[-31mm]"}
+![](assets/acronimo_nombre3l.eps)
+:::
+
+::: {.marginfigure data-latex="[-4mm]"}
+\newthought{Instructions:}
+- **Write your full name** in the top margin of all pages.
+
+- There is **only one** correct answer per question.
+
+- **Right answer:** $+0.5$ pts.\
+  **Wrong answer:** $-0.1$ pts.\
+  No answer: $0$ pts.
+:::
+
+```{r questions-1, echo=FALSE, results="asis"}
+set.seed(20241122)
+q <- get_questionnaire("quiz-database.md")
+idx <- sample(seq_along(q), 9)
+cat_question(q[[idx[1]]], 1, 1)
+```
+
+::: {.fullwidth data-latex=""}
+```{r questions-2, echo=FALSE, results="asis"}
+j <- 1
+for (i in idx[-1])
+  cat_question(q[[i]], j <- j + 1)
+```
+:::
