@@ -2,6 +2,7 @@ render_with_solution <- function(input, ...) {
   output_sol <- paste(xfun::sans_ext(input), "sol", sep="-")
   rmarkdown::render(input, output_file=output_sol, params=list(solution=TRUE))
   rmarkdown::render(input, params=list(solution=FALSE))
+  unlink(list.files(dirname(input), "*.(log|cut)", full.names=TRUE))
 }
 
 setup_solution <- function(params=parent.frame()$params, pagebreaks=FALSE) {
@@ -49,3 +50,12 @@ cat_question <- function(x, i, ncol, params=parent.frame()$params) {
   #cat("\\vspace{\\parskip}")
   cat("\\end{minipage}")
 }
+
+local({
+  dirs <- unique(dirname(list.files(pattern="*.Rmd", recursive=TRUE)))
+  assets <- c(".Rprofile", "assets")
+  for (dir in setdiff(dirs, ".")) for (asset in assets) {
+    unlink(file.path(dir, asset), recursive=TRUE, force=TRUE)
+    file.copy(asset, dir, recursive=TRUE)
+  }
+})
